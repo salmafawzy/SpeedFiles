@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     {
         frontleft.motorTorque = speed;
         frontright.motorTorque = speed;
+        backleft.motorTorque = speed;
+        backright.motorTorque = speed;
 
         currentTurnAngle = angle * Input.GetAxis("Horizontal");
         frontleft.steerAngle= currentTurnAngle;
